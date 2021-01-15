@@ -1,0 +1,205 @@
+
+@import "variables.less";
+
+@import "mixins.less";
+
+
+
+.contenedor{
+
+    color: black;
+    font-family: @fontContenedor;
+
+
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+
+
+    .grid(20px, 3, 1fr, 3, 1fr);
+
+
+
+
+    grid-template-areas:    "enemy      enemy       turns"
+
+                            "player     player      turns"
+
+                            "card1      card2       card3";
+
+    .enemy{
+        grid-area: enemy;
+
+        .grid(5px, 2, 1fr, 2, 1fr);
+
+        grid-template-areas:    "img      info"
+
+                                "img     info";
+
+    }
+
+
+
+    div{
+        box-shadow: @niceShadow;
+    }
+
+    .titulo{
+        grid-area: titulo;
+    }
+
+
+    .finalizar{
+        grid-area: finalizar;
+    }
+
+    .quedan{
+        grid-area: quedan;
+        box-shadow: none;
+    }
+
+    .actual{
+        grid-area: actual;
+        box-shadow: none;
+    }
+
+    .img{
+        grid-area: img;
+        .alignCenter;
+        box-shadow: none;
+    }
+
+    .info{
+
+        grid-area: info;
+        text-align: center;
+        box-shadow: none;
+
+        .alignCenter;
+        
+    }
+
+    .player{
+        grid-area: player;
+
+        .grid(5px, 2, 1fr, 2, 1fr);
+
+        grid-template-areas:    "img2      info2"
+
+                                "img2     info2";
+    }
+
+    .img2{
+        grid-area: img2;
+        .alignCenter;
+        box-shadow: none;
+    }
+
+    .info2{
+
+        grid-area: info2;
+        text-align: center;
+        box-shadow: none;
+
+        .alignCenter;
+        
+    }
+
+    .turns{
+        grid-area: turns;
+        background: @colorTurns;
+        text-align: center;
+        color: white;
+
+        h1, h2{
+                font-size: 2.5em;
+                margin-bottom: 0;
+        }
+
+        button{
+            background-color: @nicegreen;
+            border-color: darken(@nicegreen, 5%);
+            &:hover{
+                background-color: darken(@nicegreen, 10%);
+                border-color: darken(@nicegreen, 8%);
+            }
+    
+            &:focus{
+                box-shadow: @greenShadowFocus;
+            }
+
+            
+            
+        }
+
+    }
+
+    button{
+
+        .buttonNormal;
+
+    }
+
+    .card1{
+        grid-area: card1;
+    }
+
+    .card2{
+        grid-area: card2;
+    }
+
+    .card3{
+        grid-area: card3;
+    }
+
+    .card{
+        background: @colorCards;
+
+        text-align: center;
+
+        margin:0px;
+        padding: 0px;
+
+
+        h1, h2{
+
+            font-size: 1.75em;
+        
+        }
+
+        
+
+        button{
+
+            margin-top:0px;
+
+
+            width: 100%;
+
+
+        }
+
+    }
+
+    .player, .enemy{
+
+        width: 100%;
+        min-height: 178px;
+
+        background: @colorPlayers;
+
+        color: white;
+
+    }
+
+
+    img{
+        .imgNormal;
+    }
+
+
+}
+
+
+
+.responsive;

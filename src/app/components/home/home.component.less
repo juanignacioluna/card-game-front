@@ -1,0 +1,105 @@
+
+
+
+.contenedor{
+    margin-top: 200px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+    h3{
+        margin-bottom: 30px;
+    }
+
+
+    h1, h3{
+        font: bold 1.5em "Verdana", Geneva, sans-serif;
+        color: darken(#959595, 25%);
+    }
+
+
+
+    input{
+        text-indent: 1.15em;
+        width: 437px;
+        min-height: 45px;
+        margin-bottom: 10px;
+        background: #959595;
+        color: white;
+        font: bold 1.5em "Verdana", Geneva, sans-serif;
+
+        &::placeholder { 
+            color: white;
+        }
+
+        border: 1px solid transparent;
+        border-color: darken(#959595, 5%);
+        border-radius: 2.5px;
+    }
+
+
+
+    button{
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        font-size: 14px;
+        padding: 8px 80px;
+        margin-bottom: 0;
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        touch-action: manipulation;
+        cursor: pointer;
+        user-select: none;
+        background-image: none;
+        border: 1px solid transparent;
+        margin-left:5px;
+        margin-top:0px;
+        &:focus,
+        &:active:focus{
+                outline: thin dotted;
+                outline: 5px auto -webkit-focus-ring-color;
+                outline-offset: -2px;
+            }
+
+        &:hover,
+        &:focus{
+                color: #333;
+                text-decoration: none;
+            
+            }
+        &:active{
+                background-image: none;
+                outline: 0;
+                box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+            
+            }
+                
+        width: 440px;
+        min-height: 50px;
+        margin-bottom: 5px;
+        color: #fff;
+        background-color: #0CBFC7;
+        border-color: darken(#0CBFC7, 5%);
+        border-radius: 2.5px;
+        &:hover{
+            color: #fff;
+            background-color: darken(#0CBFC7, 10%);
+            border-color: darken(#0CBFC7, 8%);
+        }
+
+        &:focus{
+            box-shadow: 0 0 0 0.2rem rgba(0, 51, 94, 0.5);
+        }
+
+
+        font: bold 1.5em "Verdana", Geneva, sans-serif;
+
+    }
+
+
+}

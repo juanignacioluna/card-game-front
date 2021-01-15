@@ -1,0 +1,110 @@
+
+<div class="contenedor">
+
+
+    <div class="enemy">
+
+        <div class="img">
+
+
+            <img src="https://vignette.wikia.nocookie.net/fantendo/images/2/29/Paragoomba_Card.PNG/revision/latest/scale-to-width-down/340?cb=20120922004553">
+
+
+        </div>
+
+
+        <div class="info">
+
+            <h1>ENEMY</h1>
+
+            <h3>HP: {{enemyHP}}/100</h3> 
+    
+            <h3>SHIELD: {{enemyShield}}/30</h3>
+
+
+        </div>
+
+
+    </div>
+
+    <div class="player">
+
+        <div class="img2">
+
+
+            <img src="https://image.flaticon.com/icons/png/512/209/209561.png">
+
+
+
+        </div>
+
+
+        <div class="info2">
+
+            <h1>{{playerName}}</h1>
+
+            <h3>HP: {{playerHP}}/100</h3> 
+    
+            <h3>SHIELD: {{playerShield}}/30</h3>
+
+
+        </div>
+
+    </div>
+
+    <div class="turns">
+
+        <h2 class="titulo">TURNS</h2>
+
+        <div class="actual">
+            <h3>ACTUAL</h3>
+            
+            <h1>{{turns}}</h1>
+        </div>
+
+        <div class="quedan">
+
+            <h3>QUEDAN</h3>
+
+            <h1>{{turnsQuedan}}</h1>
+
+        </div>
+
+        <button class="finalizar" (click)="finalizarTurno($event)" >FINALIZAR TURNO</button>
+
+    </div>
+
+    <div class="card1 card salud">
+
+        <h2>SALUD</h2>
+
+        <h1>{{cardSalud}}</h1>
+
+        <button name={{cardSalud}} id="salud" (click)="select($event)">SELECT</button>
+
+    </div>
+
+    <div class="card2 card ataque">
+
+        <h2>ATAQUE</h2>
+
+        <h1>{{cardAtaque}}</h1>
+
+        <button name={{cardAtaque}} id="ataque" (click)="select($event)">SELECT</button>
+
+    </div>
+    
+    <div class="card3 card shield">
+
+        <h2>SHIELD</h2>
+
+        <h1>{{cardShield}}</h1>
+
+        <button name={{cardShield}} id="shield" (click)="select($event)">SELECT</button>
+
+    </div>
+
+
+</div>
+
+
